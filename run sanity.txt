@@ -1,0 +1,33 @@
+First: cd C:\Users\diego.guardiola\Desktop\Personal\Projects\My Website\backend_sanity\dg_portfolio - to enter project’s directory
+Then: npm run dev - to run Sanity Studio
+
+Other helpful commands
+sanity docs - to open the documentation in a browser
+sanity manage - to open the project settings in a browser
+sanity help - to explore the CLI manual
+
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd frontend
+  npm start
+
+Happy hacking!
+
+
+https://www.youtube.com/watch?v=3HNyXCPDQ7Q
+TIME: 
