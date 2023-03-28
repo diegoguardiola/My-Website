@@ -1,15 +1,20 @@
 import React from 'react'
 import './About.scss'
-import {images} from '../../constants/'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import { urlFor, client } from '../../client'
+import { AppWrap } from '../../wrapper'
 
-const abouts = [
-  { title: 'Full Stack Developer', description: '1 year of experience', imgURL: images.about01 }, 
-  { title: 'Automation Enfgineer', description: '3 years of experience', imgURL: images.about02 }, 
-  { title: 'Mechanical Engineer', description: '2 years of experience', imgURL: images.about03 }, 
-]
+
 const About = () => {
+
+  const [abouts, setAbouts] = useState([])
+  useEffect(() => {
+    const query = '*[_type == "about"]'
+    client.fetch(query)
+      .then((data) => setAbouts(data))
+  }, [])
+
   return (
     <div>
       <h2 className='head-text'>I know that 
@@ -28,7 +33,7 @@ const About = () => {
             className='app__profile-item'
             key={about.title + index}
           >
-            <img src={about.imgURL} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className='bold-text' style={{margin: 20}}>{about.title}</h2>
             <p className='p-text' style={{margin: 10}}>{about.description}</p>
           </motion.div>
@@ -38,4 +43,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AppWrap(About, 'About')
