@@ -3,6 +3,8 @@ import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
+import emailjs from 'emailjs-com';
+
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -16,23 +18,27 @@ const Footer = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = () => {
-    setLoading(true);
+const handleSubmit = () => {
+  setLoading(true);
 
-    const contact = {
-      _type: 'contact',
-      name: formData.username,
-      email: formData.email,
-      message: formData.message,
-    };
+  emailjs
+    .send(
+      "service_3mjfb0c", // Replace with your EmailJS service ID
+      "template_e3l492r", // Replace with your EmailJS template ID
+      {
+        from_name: formData.username,
+        from_email: formData.email,
+        message: formData.message,
+      },
+      "Avo3CHOKHj-h1HaI9" // Replace with your EmailJS user ID
+    )
+    .then(() => {
+      setLoading(false);
+      setIsFormSubmitted(true);
+    })
+    .catch((err) => console.log(err));
+};
 
-    client.create(contact)
-      .then(() => {
-        setLoading(false);
-        setIsFormSubmitted(true);
-      })
-      .catch((err) => console.log(err));
-  };
   return (
     <>
       <h2 className="head-text">Take a coffee & chat with me</h2>
