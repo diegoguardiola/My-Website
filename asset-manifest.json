@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/My-Website/static/css/main.0abdae0a.css",
-    "main.js": "/My-Website/static/js/main.c733bff6.js",
+    "main.css": "/My-Website/static/css/main.63c1def8.css",
+    "main.js": "/My-Website/static/js/main.819db275.js",
     "static/media/about02.png": "/My-Website/static/media/about02.0a26c64a56a7e0e1e144.png",
     "static/media/profile.JPG": "/My-Website/static/media/profile.3ad22939132484d52d18.JPG",
     "static/media/about04.png": "/My-Website/static/media/about04.fa7b3a72ed32b0e25bfb.png",
     "static/media/bgIMG.png": "/My-Website/static/media/bgIMG.c39101e520e2997fc6d4.png",
     "static/media/bgWhite.png": "/My-Website/static/media/bgWhite.79658cadae50b3b16ee5.png",
+    "static/media/DG_pfp.png": "/My-Website/static/media/DG_pfp.8f319ed010dbe81b4be6.png",
     "static/media/spotify.png": "/My-Website/static/media/spotify.2b5e9be1eb1ab501e7cd.png",
     "static/media/nb.png": "/My-Website/static/media/nb.98f3253e32cc67a4cb5e.png",
     "static/media/asus.png": "/My-Website/static/media/asus.514bc34955008a92e09f.png",
@@ -28,11 +29,11 @@
     "static/media/skype.png": "/My-Website/static/media/skype.c8d7ee175da5b4c8a8ab.png",
     "index.html": "/My-Website/index.html",
     "static/media/circle.svg": "/My-Website/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.0abdae0a.css.map": "/My-Website/static/css/main.0abdae0a.css.map",
-    "main.c733bff6.js.map": "/My-Website/static/js/main.c733bff6.js.map"
+    "main.63c1def8.css.map": "/My-Website/static/css/main.63c1def8.css.map",
+    "main.819db275.js.map": "/My-Website/static/js/main.819db275.js.map"
   },
   "entrypoints": [
-    "static/css/main.0abdae0a.css",
-    "static/js/main.c733bff6.js"
+    "static/css/main.63c1def8.css",
+    "static/js/main.819db275.js"
   ]
 }
