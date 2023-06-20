@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsTwitter, BsLinkedin, BsGithub, BsInstagram } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
+import './SocialMedia.scss'
 
 function SocialMedia() {
   return (

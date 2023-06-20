@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^2.0.3",
     "@sanity/client": "^5.3.2",
     "@sanity/image-url": "^1.0.2",
     "@testing-library/jest-dom": "^5.16.5",

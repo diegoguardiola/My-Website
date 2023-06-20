@@ -4,6 +4,29 @@
     flex-direction: column;
 }
 
+.head-text {
+    margin-bottom: 30px;
+}
+.about-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-text {
+    align-self: center;
+    gap: 10px;
+    margin: 10px;
+    width: 70%;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
 .app__profiles {
     display: flex;
     justify-content: center;
